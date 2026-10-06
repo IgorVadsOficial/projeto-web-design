@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --cor-principal: #4eb3de;
+  --cor-secundaria: #f2c45a;
+  --cor-semantica1: #131313;
+  --cor-semantica2: #fefefe;
+  --titulo: 32px;
+  --subtitulo: 20px;
+  --corpo: 14px;
+  --font-principal: "Nunito", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-principal);
+}
+
+header {
+  background-color: var(--cor-principal);
+
+  ul {
+    display: flex;
+    gap: 200px;
+    list-style: none;
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .home {
+    img {
+      width: 120px;
+      height: 100px;
+    }
+  }
+}
+
+#cabecalho {
+  nav {
+    background-color: var(--cor-principal);
+
+    img {
+      width: 120px;
+      height: 120px;
+    }
+
+    ul {
+      display: flex;
+      gap: 80px;
+      list-style: none;
+      margin-left: 400px;
+      font-size: 20px;
+    }
+
+    li {
+      color: var(--cor-semantica2);
+    }
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      color: var(--cor-semantica2);
+    }
+  }
+
+  .botao {
+    background-color: var(--cor-secundaria);
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+
+    img {
+      width: 15px;
+      height: 12px;
+    }
+  }
+}
