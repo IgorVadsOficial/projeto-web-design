@@ -711,3 +711,28 @@ body {
 .botao-comprar:hover {
   text-decoration: underline;
 }
+
+.ficha-tecnica {
+  margin: 20px;
+}
+
+.tabela-especificacoes {
+  width: 100%;
+}
+
+.tabela-especificacoes caption {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.tabela-especificacoes th,
+.tabela-especificacoes td {
+  border: 1px solid var(--cor-semantica3);
+  padding: 10px;
+  text-align: left;
+}
+
+.tabela-especificacoes thead {
+  background-color: var(--cor-principal);
+}
