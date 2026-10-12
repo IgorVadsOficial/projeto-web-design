@@ -638,3 +638,76 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
+.catalogo {
+  padding: 24px;
+  color: var(--cor-semantica1);
+  background-color: var(--cor-semantica2);
+}
+
+.catalogo h1 {
+  color: var(--cor-semantica1);
+  font-size: var(--titulo);
+}
+
+.introducao,
+.produto-descricao,
+.produto-tipo {
+  font-size: var(--corpo);
+}
+
+.vitrine {
+  margin-top: 24px;
+}
+
+.produto-card {
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 1px solid var(--cor-principal);
+}
+
+.link-produto,
+.link-produto:visited {
+  color: var(--cor-semantica1);
+  text-decoration: none;
+}
+
+.produto-imagem {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  height: 180px;
+  margin-bottom: 16px;
+  border: 12px solid var(--cor-semantica1);
+  background-color: var(--cor-principal);
+  color: var(--cor-semantica2);
+  text-align: center;
+}
+
+.produto-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.produto-imagem p {
+  padding-top: 60px;
+  font-size: var(--subtitulo);
+}
+
+.especificacoes {
+  padding-left: 24px;
+}
+
+.botao-comprar {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 12px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-semantica1);
+  text-decoration: none;
+}
+
+.botao-comprar:hover {
+  text-decoration: underline;
+}
