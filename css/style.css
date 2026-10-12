@@ -29,9 +29,12 @@ body {
   li {
     margin-top: 10px;
   }
+
+  .home{margin-top: 0px;}
 }
 
 .home {
+
   img {
     width: 100px;
     height: 90px;
