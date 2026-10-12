@@ -14,6 +14,8 @@ body {
   font-family: var(--font-principal);
 }
 
+
+
 .cabecalho section {
   background-color: var(--cor-principal);
 }
@@ -207,8 +209,8 @@ body {
   }
 
   img {
-    width: 900px;
-    height: 600px;
+    width: auto;
+    height: auto;
   }
 
   .nome_produto {
@@ -482,7 +484,7 @@ body {
       display: inline-block;
       padding-left: 45px;
       padding-right: 60px;
-      border: 1px solid black;
+      border: 1px solid var(--cor-semantica1);
       border-radius: 10px;
       margin-left: 10px;
 
@@ -621,10 +623,10 @@ body {
 .btn-continuar {
   display: block;
   padding: 16px;
-  background: #f5c45a;
-  border: 1px solid #8a6d1f;
+  background: var(--cor-secundaria);
+  border: 1px solid var(--cor-semantica1);
   border-radius: 6px;
-  color: #000;
+  color: var(--cor-semantica1);
   font-weight: bold;
   text-align: center;
   text-decoration: none;
