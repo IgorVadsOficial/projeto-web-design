@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --cor-principal: #4eb3de;
+  --cor-secundaria: #f2c45a;
+  --cor-semantica1: #131313;
+  --cor-semantica2: #fefefe;
+  --cor-semantica3: #3d3d3d;
+  --font-principal: "Nunito", sans-serif;
+}
+
+.pagamento {
+  padding: 32px 24px 48px;
+  background-color: var(--cor-semantica2);
+  color: var(--cor-semantica1);
+  font-size: 17px;
+}
+
+.pagamento .conteudo {
+  max-width: 1100px;
+  margin: 0px auto;
+}
+
+.pagamento h1,
+.pagamento h2,
+.pagamento h3 {
+  color: var(--cor-semantica1);
+}
+
+.pagamento h1 {
+  font-size: 36px;
+  line-height: 1.15;
+}
+.pagamento h2 {
+  font-size: 24px;
+}
+.pagamento h3 {
+  font-size: 20px;
+  margin: 20px 0 4px;
+}
+
+.pagamento a {
+  color: var(--cor-semantica1);
+}
+
+.voltar {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.compra-layout {
+  display: flex;
+  gap: 40px;
+}
+
+.compra-capa {
+  width: 240px;
+  max-width: 100%;
+  margin: 0;
+}
+
+.compra-capa img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+dt {
+  font-weight: 700;
+}
+dd {
+  margin: 0 0 12px 0;
+}
+
+.formulario {
+  max-width: 520px;
+  padding: 24px 32px 32px;
+  border: 1px solid var(--cor-semantica1);
+  border-radius: 16px;
+  background-color: var(--cor-semantica2);
+}
+
+.campo {
+  margin: 0 0 18px;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1.5px solid var(--cor-semantica1);
+  border-radius: 8px;
+  background-color: var(--cor-semantica2);
+  color: var(--cor-semantica1);
+  font-family: var(--font-principal);
+  font-size: 17px;
+}
+
+.formulario ::placeholder {
+  color: var(--cor-semantica3);
+  opacity: 1;
+  font-style: italic;
+}
+
+fieldset {
+  margin: 0 0 24px;
+  padding: 0;
+  border: none;
+}
+
+legend {
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.campo-check {
+  margin-bottom: 8px;
+}
+.campo-check label {
+  display: inline;
+  font-weight: 400;
+}
+
+.dica {
+  margin: 4px 0 0;
+  font-size: 15px;
+}
+
+.erro {
+  display: none;
+  margin: 4px 0 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.formulario input:user-invalid {
+  border-width: 3px;
+  background-color: var(--cor-secundaria);
+}
+
+.formulario input:user-invalid ~ .erro,
+fieldset:has(input:user-invalid) .erro {
+  display: block;
+}
+
+.botao-confirmar {
+  padding: 10px 24px;
+  border: 2px solid var(--cor-semantica1);
+  border-radius: 8px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-semantica1);
+  font-family: var(--font-principal);
+  font-size: 18px;
+  font-weight: 700px;
+  cursor: pointer;
+}
+
+.botao-confirmar:hover {
+  background-color: var(--cor-semantica1);
+  color: var(--cor-secundaria);
+}
+
+.info-compra {
+  margin-top: 40px;
+  scroll-margin-top: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  padding: 8px 0;
+  text-align: left;
+  font-weight: 700;
+}
+
+th,
+td {
+  padding: 10px 16px;
+  text-align: left;
+  border: 1px solid var(--cor-semantica3);
+}
+
+thead th {
+  background-color: var(--cor-principal);
+  color: var(--cor-semantica1);
+}
+
+tbody th {
+  font-weight: 700;
+}
