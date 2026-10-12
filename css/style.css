@@ -618,6 +618,12 @@ body {
   color: var(--cor-semantica1);
 }
 
+.cep label strong,
+.login a strong {
+  text-decoration: underline;
+  margin-left: 2px;
+}
+
 .btn-continuar {
   display: block;
   padding: 16px;
@@ -704,10 +710,4 @@ body {
 
 .botao-comprar:hover {
   text-decoration: underline;
-}
-
-.cep label strong,
-.login a strong {
-  text-decoration: underline;
-  margin-left: 2px;
 }
