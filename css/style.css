@@ -109,7 +109,7 @@ body {
 }
 
 .barra-busca input::placeholder {
-  color: var(--cor-semantica2);
+  color: var(--cor-semantica3);
   opacity: 1;
 }
 
