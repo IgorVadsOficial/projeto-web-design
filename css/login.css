@@ -1,0 +1,98 @@
+.pagina-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background: linear-gradient(
+        to right,
+        var(--cor-principal, #4eb3de),
+        var(--cor-secundaria, #f2c45a)
+    );
+    font-family: var(--font-principal, "Nunito", sans-serif);
+    text-align: center;
+}
+
+
+.pagina-login fieldset {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 35px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+.pagina-login fieldset > img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.pagina-login fieldset > div {
+    background-color: var(--cor-principal, #4eb3de);
+    border-radius: 55px;
+    margin: 15px 0;
+    padding: 3px;
+    
+}
+
+.pagina-login h1 {
+    color: white;
+    font-size: var(--titulo, 32px);
+}
+
+.pagina-login form {
+    margin: 15px 0;
+}
+
+.pagina-login label {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.pagina-login input {
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.pagina-login input:focus {
+    outline: 2px solid var(--cor-principal, #4eb3de);
+    border-color: transparent;
+}
+
+.pagina-login button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    color: white;
+    background-color: var(--cor-secundaria, #f2c45a);
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pagina-login button:hover {
+    filter: brightness(0.95);
+}
+
+@media (max-width: 480px) {
+    .pagina-login {
+        padding: 30px 15px;
+    }
+
+    .pagina-login fieldset {
+        padding: 25px 15px;
+    }
+}

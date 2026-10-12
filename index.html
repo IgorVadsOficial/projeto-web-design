@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="medias/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://googleapis.com" />
     <link rel="preconnect" href="https://gstatic.com" crossorigin />
     <link
@@ -12,56 +12,101 @@
       rel="stylesheet"
     />
 
-    <title>Home</title>
+    <title>Bem vindo a ShopTech</title>
   </head>
   <body>
-    <header id="cabecalho">
-      <ul>
-        <li class="home">
-          <a href="index.html" target="_blank"
-            ><img src="media/supermaket.png" alt="link home"
-          /></a>
-        </li>
-
-        <li><a href=""></a>Envie para <strong>Digite o CEP</strong></li>
-
-        <li>
-          <button class="botao">
-            <a href="carrinho.html"
-              >Carrinho <img src="media/shopping-cart.png" alt=""
+    <header class="cabecalho">
+      <section>
+        <ul class="navegacao">
+          <li class="home">
+            <a href="index.html"
+              ><img src="medias/programming.png" alt="logo do ShopTech"
             /></a>
-          </button>
-        </li>
-      </ul>
-      <nav>
-        <ul>
+          </li>
+          <li class="cep">
+            <form id="form-cep">
+              <label for="cep">
+                <img src="medias/maps-and-flags.png" alt="#" />
+                <strong style="text-decoration: underline"
+                  >Digite o CEP:</strong
+                ></label
+              >
+              <br />
+              <input
+                type="text"
+                id="cep"
+                name="cep"
+                placeholder="00000-000"
+                maxlength="8"
+                size="9"
+                inputmode="numeric"
+                pattern="[0-9]{5}-?[0-9]{3}"
+                required
+              />
+              <button type="submit">OK</button>
+            </form>
+          </li>
+          <li>
+            <form class="barra-busca" action="#" method="get">
+              <input
+                type="search"
+                name="busca"
+                placeholder="Procurar"
+                aria-label="Buscar produtos"
+              />
+              <button type="submit" aria-label="Buscar">🔍</button>
+            </form>
+          </li>
+          <li class="login">
+            <img src="medias/login.png" alt="login" />
+            <a href="login.html" class="linklogin"
+              ><strong style="text-decoration: underline">Entre</strong></a
+            >
+            ou
+
+            <br />
+            <a href="register.html"
+              ><strong style="text-decoration: underline"
+                >Cadastre-se</strong
+              ></a
+            >
+          </li>
+          <li>
+            <button class="carrinho">
+              <a href="carrinho.html"
+                >Carrinho <img src="medias/cart.png" alt="#"
+              /></a>
+            </button>
+          </li>
+        </ul>
+        <nav class="generos">
+          <ul>
+            <li><a href="informatica.html">Informática</a></li>
+            <li><a href="eletrodomesticos.html">Eletrodomésticos</a></li>
+            <li><a href="smartphones.html">Smartphones</a></li>
+            <li><a href="tv.html">TV e Video</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main></main>
+
+    <footer class="rodape">
+      <div class="rodape-conteudo">
+        <p class="rodape-marca"><a href="index.html">ShopTech</a></p>
+
+        <ul class="rodape-links">
           <li><a href="informatica.html">Informática</a></li>
           <li><a href="eletrodomesticos.html">Eletrodomésticos</a></li>
           <li><a href="smartphones.html">Smartphones</a></li>
-          <li><a href="tv.html">TV e video</a></li>
+          <li><a href="tv.html">TV e Video</a></li>
         </ul>
-      </nav>
-    </header>
 
-    <main>
-      <section class="produto-destaque">
-        <div class="produto-imagem">
-          <img src="media/notebook.jpg" alt="Notebook modelo DELL XPS 5" />
-          <h2>Notebook DELL XPS 5</h2>
-        </div>
-
-        <div class="produto-info">
-          <h1>Notebook DELL XPS 5</h1>
-          <p class="descricao">
-            Tela OLED 15.6pol 3.5K - Intel Core 9-13900H - 32GB RAM - SSD 1 TB - GPU RTX 4070
-          </p>
-        <div class="preco">
-          <span>PREÇO</span>
-          <strong>R$ 12.499,00</strong>
-        </div>
-          <a class="botao" href="carrinho.html">Adicionar ao Carrinho</a>
-        </div>
-      </section>
-    </main>
+        <p class="rodape-copy">
+          © 2026 ShopTech. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
