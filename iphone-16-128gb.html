@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="medias/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Apple iPhone 16 128 GB</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <section>
+        <ul class="navegacao">
+          <li class="home">
+            <a href="index.html"
+              ><img src="medias/programming.png" alt="logo do ShopTech"
+            /></a>
+          </li>
+          <li class="cep">
+            <form id="form-cep">
+              <label for="cep">
+                <img src="medias/maps-and-flags.png" alt="#" />
+                <strong style="text-decoration: underline"
+                  >Digite o CEP:</strong
+                ></label
+              >
+              <br />
+              <input
+                type="text"
+                id="cep"
+                name="cep"
+                placeholder="00000-000"
+                maxlength="8"
+                size="9"
+                inputmode="numeric"
+                pattern="[0-9]{5}-?[0-9]{3}"
+                required
+              />
+              <button type="submit">OK</button>
+            </form>
+          </li>
+          <li>
+            <form class="barra-busca" action="#" method="get">
+              <input
+                type="search"
+                name="busca"
+                placeholder="Procurar"
+                aria-label="Buscar produtos"
+              />
+              <button type="submit" aria-label="Buscar">🔍</button>
+            </form>
+          </li>
+          <li class="login">
+            <img src="medias/login.png" alt="login" />
+            <a href="login.html" class="linklogin"
+              ><strong style="text-decoration: underline">Entre</strong></a
+            >
+            ou
+
+            <br />
+            <a href="register.html"
+              ><strong style="text-decoration: underline"
+                >Cadastre-se</strong
+              ></a
+            >
+          </li>
+          <li>
+            <button class="carrinho">
+              <a href="carrinho.html"
+                >Carrinho <img src="medias/cart.png" alt="#"
+              /></a>
+            </button>
+          </li>
+        </ul>
+        <nav class="generos">
+          <ul>
+            <li><a href="informatica.html">Informática</a></li>
+            <li><a href="eletrodomesticos.html">Eletrodomésticos</a></li>
+            <li><a href="smartphones.html">Smartphones</a></li>
+            <li><a href="tv.html">TV e Video</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main id="produto">
+      <ul>
+        <li><img src="produtos/dell xps15.png" alt="Imagem de Apple iPhone 16 128 GB" /></li>
+        <li>
+          <h1 class="nome_produto"><strong>Apple iPhone 16 128 GB</strong></h1>
+          <h2>
+            Smartphone Apple iPhone 16 com tela Super Retina XDR, câmera dupla e armazenamento de 128 GB.
+          </h2>
+          <h3>PREÇO</h3>
+          <h1><strong>R$ 5.499,00</strong></h1>
+        </li>
+      </ul>
+
+      <ul class="comprar">
+        <li>
+          <button class="botao_ver">
+            <a href="carrinho.html"><strong>Ver</strong></a>
+          </button>
+        </li>
+
+        <li>
+          <button class="botao_comprar">
+            <a href="carrinho.html"><strong>Comprar</strong></a>
+          </button>
+        </li>
+      </ul>
+
+      <h1 class="titulo_descricao"><strong>Descrição: </strong></h1>
+
+      <p class="descricao">
+        O iPhone 16 é um smartphone Apple com tela Super Retina XDR, sistema de câmera dupla e armazenamento interno de 128 GB. A disponibilidade de recursos pode variar conforme a configuração.
+      </p>
+    </main>
+    <footer class="rodape">
+      <div class="rodape-conteudo">
+        <p class="rodape-marca"><a href="index.html">ShopTech</a></p>
+
+        <ul class="rodape-links">
+          <li><a href="informatica.html">Informática</a></li>
+          <li><a href="eletrodomesticos.html">Eletrodomésticos</a></li>
+          <li><a href="smartphones.html">Smartphones</a></li>
+          <li><a href="tv.html">TV e Video</a></li>
+        </ul>
+
+        <p class="rodape-copy">
+          © 2026 ShopTech. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
