@@ -1,11 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TV</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/categorias.css">
+    <link rel="shortcut icon" href="medias/favicon.ico" type="image/x-icon">
+    <title>TV e Vídeo | ShopTech</title>
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <section>
+            <ul class="navegacao">
+                <li class="home"><a href="index.html"><img src="medias/programming.png" alt="Logo da ShopTech"></a></li>
+                <li class="cep">
+                    <form id="form-cep">
+                        <label for="cep"><img src="medias/maps-and-flags.png" alt=""><strong>Digite o CEP:</strong></label>
+                        <br>
+                        <input type="text" id="cep" name="cep" placeholder="00000-000" maxlength="8" size="9" inputmode="numeric" pattern="[0-9]{5}-?[0-9]{3}" required>
+                        <button type="submit">OK</button>
+                    </form>
+                </li>
+                <li>
+                    <form class="barra-busca" action="#" method="get">
+                        <input type="search" name="busca" placeholder="Procurar" aria-label="Buscar produtos">
+                        <button type="submit" aria-label="Buscar">🔍</button>
+                    </form>
+                </li>
+                <li class="login">
+                    <img src="medias/login.png" alt="">
+                    <a href="login.html" class="linklogin"><strong>Entre</strong></a>
+                    ou<br>
+                    <a href="register.html"><strong>Cadastre-se</strong></a>
+                </li>
+                <li><button class="carrinho"><a href="carrinho.html">Carrinho <img src="medias/cart.png" alt=""></a></button></li>
+            </ul>
+            <nav class="generos" aria-label="Categorias">
+                <ul>
+                    <li><a href="informatica.html">Informática</a></li>
+                    <li><a href="eletrodomesticos.html">Eletrodomésticos</a></li>
+                    <li><a href="smartphones.html">Smartphones</a></li>
+                    <li><a href="tv.html" aria-current="page">TV e Vídeo</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main class="catalogo">
+        <div class="catalogo-cabecalho">
+            <h1>TV e Vídeo</h1>
+            <p class="introducao">Televisores para assistir a filmes, séries e programação.</p>
+        </div>
+        <section class="vitrine" aria-label="Produtos de TV e vídeo">
+            <article class="produto-card">
+                <div class="produto-imagem" role="img" aria-label="Placeholder da imagem da Samsung Crystal UHD DU8000 de 50 polegadas">
+                    <p>Imagem do produto</p>
+                </div>
+                <div class="produto-info">
+                    <p class="produto-tipo">Samsung</p>
+                    <h2><a class="link-produto" href="samsung-crystal-uhd-du8000-50.html">Crystal UHD DU8000 50"</a></h2>
+                    <p class="produto-descricao">Smart TV Samsung Crystal UHD da série DU8000.</p>
+                    <ul class="especificacoes"><li>Tela 4K UHD</li><li>Smart TV</li><li>Conexão Wi-Fi</li></ul>
+                    <p><strong>Preço ilustrativo: R$ 2.699,00</strong></p>
+                    <a class="botao-comprar" href="carrinho.html">Adicionar ao carrinho</a>
+                </div>
+            </article>
+            <article class="produto-card">
+                <div class="produto-imagem" role="img" aria-label="Placeholder da imagem da LG UHD UT8050 de 50 polegadas">
+                    <p>Imagem do produto</p>
+                </div>
+                <div class="produto-info">
+                    <p class="produto-tipo">LG</p>
+                    <h2><a class="link-produto" href="lg-uhd-ut8050-50.html">LG UHD UT8050 50"</a></h2>
+                    <p class="produto-descricao">Smart TV LG UHD da linha UT8050 com sistema webOS.</p>
+                    <ul class="especificacoes"><li>Tela 4K UHD</li><li>Sistema webOS</li><li>Assistentes de voz</li></ul>
+                    <p><strong>Preço ilustrativo: R$ 2.799,00</strong></p>
+                    <a class="botao-comprar" href="carrinho.html">Adicionar ao carrinho</a>
+                </div>
+            </article>
+            <article class="produto-card">
+                <div class="produto-imagem" role="img" aria-label="Placeholder da imagem da TCL QLED C655 de 55 polegadas">
+                    <p>Imagem do produto</p>
+                </div>
+                <div class="produto-info">
+                    <p class="produto-tipo">TCL</p>
+                    <h2><a class="link-produto" href="tcl-qled-c655-55.html">TCL QLED C655 55"</a></h2>
+                    <p class="produto-descricao">Smart TV TCL com painel QLED e resolução 4K.</p>
+                    <ul class="especificacoes"><li>Tela QLED 4K</li><li>Google TV</li><li>Compatível com HDR</li></ul>
+                    <p><strong>Preço ilustrativo: R$ 2.499,00</strong></p>
+                    <a class="botao-comprar" href="carrinho.html">Adicionar ao carrinho</a>
+                </div>
+            </article>
+            <article class="produto-card">
+                <div class="produto-imagem" role="img" aria-label="Placeholder da imagem da Philips Ambilight PUG7908 de 50 polegadas">
+                    <p>Imagem do produto</p>
+                </div>
+                <div class="produto-info">
+                    <p class="produto-tipo">Philips</p>
+                    <h2><a class="link-produto" href="philips-ambilight-pug7908-50.html">Philips Ambilight PUG7908 50"</a></h2>
+                    <p class="produto-descricao">Smart TV Philips com iluminação Ambilight e sistema Google TV.</p>
+                    <ul class="especificacoes"><li>Tela 4K UHD</li><li>Iluminação Ambilight</li><li>Google TV</li></ul>
+                    <p><strong>Preço ilustrativo: R$ 3.199,00</strong></p>
+                    <a class="botao-comprar" href="carrinho.html">Adicionar ao carrinho</a>
+                </div>
+            </article>
+            <article class="produto-card">
+                <div class="produto-imagem" role="img" aria-label="Placeholder da imagem da Hisense A6N de 55 polegadas">
+                    <p>Imagem do produto</p>
+                </div>
+                <div class="produto-info">
+                    <p class="produto-tipo">Hisense</p>
+                    <h2><a class="link-produto" href="hisense-a6n-55.html">Hisense A6N 55"</a></h2>
+                    <p class="produto-descricao">Smart TV Hisense da série A6N com resolução 4K.</p>
+                    <ul class="especificacoes"><li>Tela 4K UHD</li><li>Smart TV</li><li>Compatível com HDR</li></ul>
+                    <p><strong>Preço ilustrativo: R$ 2.199,00</strong></p>
+                    <a class="botao-comprar" href="carrinho.html">Adicionar ao carrinho</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <p class="rodape-marca"><a href="index.html">ShopTech</a></p>
+            <ul class="rodape-links">
+                <li><a href="informatica.html">Informática</a></li>
+                <li><a href="eletrodomesticos.html">Eletrodomésticos</a></li>
+                <li><a href="smartphones.html">Smartphones</a></li>
+                <li><a href="tv.html">TV e Vídeo</a></li>
+            </ul>
+            <p class="rodape-copy">© 2026 ShopTech. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

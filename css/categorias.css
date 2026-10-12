@@ -1,15 +1,48 @@
-/* Estilos simples da página de Informática, usando o Design System existente. */
 .cabecalho .navegacao {
-  gap: 48px;
+  display: block;
+  padding: 0;
+}
+
+.cabecalho .navegacao > li {
+  display: inline-block;
+  margin: 8px;
+  vertical-align: middle;
+}
+
+.cabecalho .barra-busca {
+  width: 300px;
+  max-width: 100%;
+}
+
+.cabecalho .home {
+  color: var(--cor-semantica2);
+  text-decoration: none;
+}
+
+.cabecalho .home a {
+  color: var(--cor-semantica2);
+  text-decoration: none;
 }
 
 .cabecalho .generos ul {
+  display: block;
   margin-left: 0;
-  gap: 24px;
+  padding-left: 0;
 }
 
 .cabecalho .generos li {
+  display: inline-block;
   margin-left: 0;
+  margin-right: 12px;
+}
+
+.rodape .rodape-links {
+  display: block;
+}
+
+.rodape .rodape-links li {
+  display: inline-block;
+  margin: 0 8px;
 }
 
 .catalogo {
@@ -39,41 +72,37 @@
   border: 1px solid var(--cor-principal);
 }
 
+.link-produto,
+.link-produto:visited {
+  color: var(--cor-semantica1);
+  text-decoration: none;
+}
+
 .produto-imagem {
   display: block;
-  margin-bottom: 16px;
-}
-
-.produto-imagem img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-}
-
-.produto-imagem--monitor {
   width: 300px;
   max-width: 100%;
   height: 180px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-bottom: 16px;
   border: 12px solid var(--cor-semantica1);
   background-color: var(--cor-principal);
   color: var(--cor-semantica2);
   text-align: center;
 }
 
-.produto-imagem--monitor strong {
-  display: block;
+.produto-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.produto-imagem p {
   padding-top: 60px;
   font-size: var(--subtitulo);
 }
 
 .especificacoes {
   padding-left: 24px;
-}
-
-.preco {
-  font-size: var(--subtitulo);
 }
 
 .botao-comprar {

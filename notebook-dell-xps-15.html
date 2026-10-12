@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="medias/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Notebook Dell XPS 15</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <section>
+        <ul class="navegacao">
+          <li class="home">
+            <a href="index.html"
+              ><img src="medias/programming.png" alt="logo do ShopTech"
+            /></a>
+          </li>
+          <li class="cep">
+            <form id="form-cep">
+              <label for="cep">
+                <img src="medias/maps-and-flags.png" alt="#" />
+                <strong style="text-decoration: underline"
+                  >Digite o CEP:</strong
+                ></label
+              >
+              <br />
+              <input
+                type="text"
+                id="cep"
+                name="cep"
+                placeholder="00000-000"
+                maxlength="8"
+                size="9"
+                inputmode="numeric"
+                pattern="[0-9]{5}-?[0-9]{3}"
+                required
+              />
+              <button type="submit">OK</button>
+            </form>
+          </li>
+          <li>
+            <form class="barra-busca" action="#" method="get">
+              <input
+                type="search"
+                name="busca"
+                placeholder="Procurar"
+                aria-label="Buscar produtos"
+              />
+              <button type="submit" aria-label="Buscar">🔍</button>
+            </form>
+          </li>
+          <li class="login">
+            <img src="medias/login.png" alt="login" />
+            <a href="login.html" class="linklogin"
+              ><strong style="text-decoration: underline">Entre</strong></a
+            >
+            ou
+
+            <br />
+            <a href="register.html"
+              ><strong style="text-decoration: underline"
+                >Cadastre-se</strong
+              ></a
+            >
+          </li>
+          <li>
+            <button class="carrinho">
+              <a href="carrinho.html"
+                >Carrinho <img src="medias/cart.png" alt="#"
+              /></a>
+            </button>
+          </li>
+        </ul>
+        <nav class="generos">
+          <ul>
+            <li><a href="informatica.html">Informática</a></li>
+            <li><a href="eletrodomesticos.html">Eletrodomésticos</a></li>
+            <li><a href="smartphones.html">Smartphones</a></li>
+            <li><a href="tv.html">TV e Video</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main id="produto">
+      <ul>
+        <li><img src="produtos/dell xps15.png" alt="img do xps15" /></li>
+        <li>
+          <h1 class="nome_produto"><strong>DELL XPS 15</strong></h1>
+          <h2>
+            Tela OLED 15.6pol 3.5K - Intel Core 9-13900H - 32GB RAM - SSD 1 TB -
+            GPU RTX 4070
+          </h2>
+          <h3>PREÇO</h3>
+          <h1><strong>R$ 12.499,00</strong></h1>
+        </li>
+      </ul>
+
+      <ul class="comprar">
+        <li>
+          <button class="botao_ver">
+            <a href="carrinho.html"><strong>Ver</strong></a>
+          </button>
+        </li>
+
+        <li>
+          <button class="botao_comprar">
+            <a href="carrinho.html"><strong>Comprar</strong></a>
+          </button>
+        </li>
+      </ul>
+
+      <h1 class="titulo_descricao"><strong>Descrição: </strong></h1>
+
+      <p class="descricao">
+        Potência para criar, trabalhar e jogar, sem abrir mão da elegância. O
+        Dell XPS 15 reúne desempenho de workstation e design premium em um
+        notebook fino e sofisticado, pensado para quem não aceita limites. Tela
+        OLED 3.5K de 15,6" Cores intensas, pretos profundos e contraste
+        absoluto. Ideal para editar fotos e vídeos, assistir a filmes ou
+        simplesmente trabalhar com uma qualidade de imagem que impressiona.
+        Processador Intel Core i9-13900H Velocidade para rodar vários programas
+        pesados ao mesmo tempo, renderizar projetos e multitarefa sem
+        travamentos. Placa de vídeo NVIDIA GeForce RTX 4070 Gráficos de alto
+        nível para jogos, modelagem 3D, edição de vídeo e tarefas aceleradas por
+        IA. 32 GB de RAM + SSD de 1 TB Abra dezenas de abas e projetos grandes
+        sem perder o fôlego, com inicialização rápida e muito espaço para seus
+        arquivos. Design premium Estrutura compacta e elegante, com borda
+        infinita que valoriza a tela e teclado confortável para longas jornadas.
+        Ideal para: designers, editores de vídeo, arquitetos, engenheiros,
+        desenvolvedores e criadores de conteúdo.
+      </p>
+    </main>
+    <footer class="rodape">
+      <div class="rodape-conteudo">
+        <p class="rodape-marca"><a href="index.html">ShopTech</a></p>
+
+        <ul class="rodape-links">
+          <li><a href="informatica.html">Informática</a></li>
+          <li><a href="eletrodomesticos.html">Eletrodomésticos</a></li>
+          <li><a href="smartphones.html">Smartphones</a></li>
+          <li><a href="tv.html">TV e Video</a></li>
+        </ul>
+
+        <p class="rodape-copy">
+          © 2026 ShopTech. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
