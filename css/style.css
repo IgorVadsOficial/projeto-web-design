@@ -14,6 +14,11 @@
 body {
   margin: 0px;
   font-family: var(--font-principal);
+  background: linear-gradient(
+    to right,
+    var(--cor-principal, #4eb3de),
+    var(--cor-secundaria, #f2c45a)
+  );
 }
 
 .cabecalho section {
