@@ -109,7 +109,7 @@ body {
 }
 
 .barra-busca input::placeholder {
-  color: var(--cor-semantica2);
+  color: var(--cor-semantica3);
   opacity: 1;
 }
 
@@ -616,6 +616,12 @@ body {
 .continuar {
   background-color: var(--cor-secundaria);
   color: var(--cor-semantica1);
+}
+
+.cep label strong,
+.login a strong {
+  text-decoration: underline;
+  margin-left: 2px;
 }
 
 .btn-continuar {

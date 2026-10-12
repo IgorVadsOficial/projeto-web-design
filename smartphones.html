@@ -1,135 +1,247 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="medias/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/categorias.css" />
+    <link rel="shortcut icon" href="medias/favicon.ico" type="image/x-icon" />
     <title>Smartphones | ShopTech</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="cabecalho">
-        <section>
-            <ul class="navegacao">
-                <li class="home"><a href="index.html"><img src="medias/programming.png" alt="Logo da ShopTech"></a></li>
-                <li class="cep">
-                    <form id="form-cep">
-                        <label for="cep"><img src="medias/maps-and-flags.png" alt=""><strong>Digite o CEP:</strong></label>
-                        <br>
-                        <input type="text" id="cep" name="cep" placeholder="00000-000" maxlength="8" size="9" inputmode="numeric" pattern="[0-9]{5}-?[0-9]{3}" required>
-                        <button type="submit">OK</button>
-                    </form>
-                </li>
-                <li>
-                    <form class="barra-busca" action="#" method="get">
-                        <input type="search" name="busca" placeholder="Procurar" aria-label="Buscar produtos">
-                        <button type="submit" aria-label="Buscar">🔍</button>
-                    </form>
-                </li>
-                <li class="login">
-                    <img src="medias/login.png" alt="">
-                    <a href="login.html" class="linklogin"><strong>Entre</strong></a>
-                    ou<br>
-                    <a href="register.html"><strong>Cadastre-se</strong></a>
-                </li>
-                <li><button class="carrinho"><a href="carrinho.html">Carrinho <img src="medias/cart.png" alt=""></a></button></li>
-            </ul>
-            <nav class="generos" aria-label="Categorias">
-                <ul>
-                    <li><a href="informatica.html">Informática</a></li>
-                    <li><a href="eletrodomesticos.html">Eletrodomésticos</a></li>
-                    <li><a href="smartphones.html" aria-current="page">Smartphones</a></li>
-                    <li><a href="tv.html">TV e Vídeo</a></li>
-                </ul>
-            </nav>
-        </section>
+      <section>
+        <ul class="navegacao">
+          <li class="home">
+            <a href="index.html"
+              ><img src="medias/programming.png" alt="Logo da ShopTech"
+            /></a>
+          </li>
+          <li class="cep">
+            <form id="form-cep">
+              <label for="cep"
+                ><img src="medias/maps-and-flags.png" alt="" /><strong
+                  >Digite o CEP:</strong
+                ></label
+              >
+              <br />
+              <input
+                type="text"
+                id="cep"
+                name="cep"
+                placeholder="00000-000"
+                maxlength="8"
+                size="9"
+                inputmode="numeric"
+                pattern="[0-9]{5}-?[0-9]{3}"
+                required
+              />
+              <button type="submit">OK</button>
+            </form>
+          </li>
+          <li>
+            <form class="barra-busca" action="#" method="get">
+              <input
+                type="search"
+                name="busca"
+                placeholder="Procurar"
+                aria-label="Buscar produtos"
+              />
+              <button type="submit" aria-label="Buscar">🔍</button>
+            </form>
+          </li>
+          <li class="login">
+            <img src="medias/login.png" alt="" />
+            <a href="login.html" class="linklogin"><strong>Entre</strong></a>
+            ou<br />
+            <a href="register.html"><strong>Cadastre-se</strong></a>
+          </li>
+          <li>
+            <button class="carrinho">
+              <a href="carrinho.html"
+                >Carrinho <img src="medias/cart.png" alt=""
+              /></a>
+            </button>
+          </li>
+        </ul>
+        <nav class="generos" aria-label="Categorias">
+          <ul>
+            <li><a href="informatica.html">Informática</a></li>
+            <li><a href="eletrodomesticos.html">Eletrodomésticos</a></li>
+            <li>
+              <a href="smartphones.html" aria-current="page">Smartphones</a>
+            </li>
+            <li><a href="tv.html">TV e Vídeo</a></li>
+          </ul>
+        </nav>
+      </section>
     </header>
 
     <main class="catalogo">
-        <div class="catalogo-cabecalho">
-            <h1>Smartphones</h1>
-            <p class="introducao">Celulares para comunicação, fotografia e entretenimento.</p>
-        </div>
-        <section class="vitrine" aria-label="Produtos da categoria smartphones">
-            <article class="produto-card">
-                <div class="produto-imagem">
-                    <img src="produtos/61ctYsUobKL-removebg-preview.png" alt="iPhone 16 128 GB">
-                </div>
-                <div class="produto-info">
-                    <p class="produto-tipo">Apple</p>
-                    <h2><a class="link-produto" href="iphone-16-128gb.html">iPhone 16 128 GB</a></h2>
-                    <p class="produto-descricao">Smartphone Apple da linha iPhone 16 com armazenamento de 128 GB.</p>
-                    <ul class="especificacoes"><li>Tela Super Retina XDR</li><li>Câmera dupla</li><li>Armazenamento de 128 GB</li></ul>
-                    <p><strong>Preço ilustrativo: R$ 5.499,00</strong></p>
-                    <a class="botao-comprar" href="carrinho.html">Adicionar ao carrinho</a>
-                </div>
-            </article>
-            <article class="produto-card">
-                <div class="produto-imagem">
-                    <img src="produtos/172112-800-auto-removebg-preview.png" alt="Samsung Galaxy A56 5G">
-                </div>
-                <div class="produto-info">
-                    <p class="produto-tipo">Samsung</p>
-                    <h2><a class="link-produto" href="samsung-galaxy-a56-5g.html">Galaxy A56 5G</a></h2>
-                    <p class="produto-descricao">Smartphone Samsung da linha Galaxy A com conexão móvel 5G.</p>
-                    <ul class="especificacoes"><li>Tela Super AMOLED</li><li>Conexão 5G</li><li>Câmera principal de 50 MP</li></ul>
-                    <p><strong>Preço ilustrativo: R$ 2.699,00</strong></p>
-                    <a class="botao-comprar" href="carrinho.html">Adicionar ao carrinho</a>
-                </div>
-            </article>
-            <article class="produto-card">
-                <div class="produto-imagem">
-                    <img src="produtos/motorola-edge.png" alt="Motorola Edge 50 Fusion">
-                </div>
-                <div class="produto-info">
-                    <p class="produto-tipo">Motorola</p>
-                    <h2><a class="link-produto" href="motorola-edge-50-fusion.html">Motorola Edge 50 Fusion</a></h2>
-                    <p class="produto-descricao">Smartphone da linha Edge com tela ampla e carregamento rápido.</p>
-                    <ul class="especificacoes"><li>Tela pOLED</li><li>Conexão 5G</li><li>Câmera principal de 50 MP</li></ul>
-                    <p><strong>Preço ilustrativo: R$ 1.799,00</strong></p>
-                    <a class="botao-comprar" href="carrinho.html">Adicionar ao carrinho</a>
-                </div>
-            </article>
-            <article class="produto-card">
-                <div class="produto-imagem">
-                    <img src="produtos/Redmi-Note-14-4G-Azul-oceano.png" alt="Xiaomi Redmi Note 14">
-                </div>
-                <div class="produto-info">
-                    <p class="produto-tipo">Xiaomi</p>
-                    <h2><a class="link-produto" href="xiaomi-redmi-note-14.html">Redmi Note 14</a></h2>
-                    <p class="produto-descricao">Smartphone da linha Redmi Note para uso diário e multimídia.</p>
-                    <ul class="especificacoes"><li>Tela AMOLED</li><li>Câmera principal de 108 MP</li><li>Bateria de longa duração</li></ul>
-                    <p><strong>Preço ilustrativo: R$ 1.499,00</strong></p>
-                    <a class="botao-comprar" href="carrinho.html">Adicionar ao carrinho</a>
-                </div>
-            </article>
-            <article class="produto-card">
-                <div class="produto-imagem">
-                    <img src="produtos/samsung-galaxy-s24-fe.png" alt="Samsung Galaxy S24 FE">
-                </div>
-                <div class="produto-info">
-                    <p class="produto-tipo">Samsung</p>
-                    <h2><a class="link-produto" href="samsung-galaxy-s24-fe.html">Galaxy S24 FE</a></h2>
-                    <p class="produto-descricao">Smartphone da linha Galaxy S com recursos avançados de câmera e desempenho.</p>
-                    <ul class="especificacoes"><li>Tela Dynamic AMOLED 2X</li><li>Conexão 5G</li><li>Câmera tripla</li></ul>
-                    <p><strong>Preço ilustrativo: R$ 3.499,00</strong></p>
-                    <a class="botao-comprar" href="carrinho.html">Adicionar ao carrinho</a>
-                </div>
-            </article>
-        </section>
+      <div class="catalogo-cabecalho">
+        <h1>Smartphones</h1>
+        <p class="introducao">
+          Celulares para comunicação, fotografia e entretenimento.
+        </p>
+      </div>
+      <section class="vitrine" aria-label="Produtos da categoria smartphones">
+        <article class="produto-card">
+          <div class="produto-imagem">
+            <img
+              src="produtos/61ctYsUobKL-removebg-preview.png"
+              alt="iPhone 16 128 GB"
+            />
+          </div>
+          <div class="produto-info">
+            <p class="produto-tipo">Apple</p>
+            <h2>
+              <a class="link-produto" href="iphone-16-128gb.html"
+                >iPhone 16 128 GB</a
+              >
+            </h2>
+            <p class="produto-descricao">
+              Smartphone Apple da linha iPhone 16 com armazenamento de 128 GB.
+            </p>
+            <ul class="especificacoes">
+              <li>Tela Super Retina XDR</li>
+              <li>Câmera dupla</li>
+              <li>Armazenamento de 128 GB</li>
+            </ul>
+            <p><strong>Preço ilustrativo: R$ 5.499,00</strong></p>
+            <a class="botao-comprar" href="carrinho.html"
+              >Adicionar ao carrinho</a
+            >
+          </div>
+        </article>
+        <article class="produto-card">
+          <div class="produto-imagem">
+            <img
+              src="produtos/172112-800-auto-removebg-preview.png"
+              alt="Samsung Galaxy A56 5G"
+            />
+          </div>
+          <div class="produto-info">
+            <p class="produto-tipo">Samsung</p>
+            <h2>
+              <a class="link-produto" href="samsung-galaxy-a56-5g.html"
+                >Galaxy A56 5G</a
+              >
+            </h2>
+            <p class="produto-descricao">
+              Smartphone Samsung da linha Galaxy A com conexão móvel 5G.
+            </p>
+            <ul class="especificacoes">
+              <li>Tela Super AMOLED</li>
+              <li>Conexão 5G</li>
+              <li>Câmera principal de 50 MP</li>
+            </ul>
+            <p><strong>Preço ilustrativo: R$ 2.699,00</strong></p>
+            <a class="botao-comprar" href="carrinho.html"
+              >Adicionar ao carrinho</a
+            >
+          </div>
+        </article>
+        <article class="produto-card">
+          <div class="produto-imagem">
+            <img
+              src="produtos/motorola-edge.png"
+              alt="Motorola Edge 50 Fusion"
+            />
+          </div>
+          <div class="produto-info">
+            <p class="produto-tipo">Motorola</p>
+            <h2>
+              <a class="link-produto" href="motorola-edge-50-fusion.html"
+                >Motorola Edge 50 Fusion</a
+              >
+            </h2>
+            <p class="produto-descricao">
+              Smartphone da linha Edge com tela ampla e carregamento rápido.
+            </p>
+            <ul class="especificacoes">
+              <li>Tela pOLED</li>
+              <li>Conexão 5G</li>
+              <li>Câmera principal de 50 MP</li>
+            </ul>
+            <p><strong>Preço ilustrativo: R$ 1.799,00</strong></p>
+            <a class="botao-comprar" href="carrinho.html"
+              >Adicionar ao carrinho</a
+            >
+          </div>
+        </article>
+        <article class="produto-card">
+          <div class="produto-imagem">
+            <img
+              src="produtos/Redmi-Note-14-4G-Azul-oceano.png"
+              alt="Xiaomi Redmi Note 14"
+            />
+          </div>
+          <div class="produto-info">
+            <p class="produto-tipo">Xiaomi</p>
+            <h2>
+              <a class="link-produto" href="xiaomi-redmi-note-14.html"
+                >Redmi Note 14</a
+              >
+            </h2>
+            <p class="produto-descricao">
+              Smartphone da linha Redmi Note para uso diário e multimídia.
+            </p>
+            <ul class="especificacoes">
+              <li>Tela AMOLED</li>
+              <li>Câmera principal de 108 MP</li>
+              <li>Bateria de longa duração</li>
+            </ul>
+            <p><strong>Preço ilustrativo: R$ 1.499,00</strong></p>
+            <a class="botao-comprar" href="carrinho.html"
+              >Adicionar ao carrinho</a
+            >
+          </div>
+        </article>
+        <article class="produto-card">
+          <div class="produto-imagem">
+            <img
+              src="produtos/samsung-galaxy-s24-fe.png"
+              alt="Samsung Galaxy S24 FE"
+            />
+          </div>
+          <div class="produto-info">
+            <p class="produto-tipo">Samsung</p>
+            <h2>
+              <a class="link-produto" href="samsung-galaxy-s24-fe.html"
+                >Galaxy S24 FE</a
+              >
+            </h2>
+            <p class="produto-descricao">
+              Smartphone da linha Galaxy S com recursos avançados de câmera e
+              desempenho.
+            </p>
+            <ul class="especificacoes">
+              <li>Tela Dynamic AMOLED 2X</li>
+              <li>Conexão 5G</li>
+              <li>Câmera tripla</li>
+            </ul>
+            <p><strong>Preço ilustrativo: R$ 3.499,00</strong></p>
+            <a class="botao-comprar" href="carrinho.html"
+              >Adicionar ao carrinho</a
+            >
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer class="rodape">
-        <div class="rodape-conteudo">
-            <p class="rodape-marca"><a href="index.html">ShopTech</a></p>
-            <ul class="rodape-links">
-                <li><a href="informatica.html">Informática</a></li>
-                <li><a href="eletrodomesticos.html">Eletrodomésticos</a></li>
-                <li><a href="smartphones.html">Smartphones</a></li>
-                <li><a href="tv.html">TV e Vídeo</a></li>
-            </ul>
-            <p class="rodape-copy">© 2026 ShopTech. Todos os direitos reservados.</p>
-        </div>
+      <div class="rodape-conteudo">
+        <p class="rodape-marca"><a href="index.html">ShopTech</a></p>
+        <ul class="rodape-links">
+          <li><a href="informatica.html">Informática</a></li>
+          <li><a href="eletrodomesticos.html">Eletrodomésticos</a></li>
+          <li><a href="smartphones.html">Smartphones</a></li>
+          <li><a href="tv.html">TV e Vídeo</a></li>
+        </ul>
+        <p class="rodape-copy">
+          © 2026 ShopTech. Todos os direitos reservados.
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
