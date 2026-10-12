@@ -5,9 +5,7 @@
   --cor-secundaria: #f2c45a;
   --cor-semantica1: #131313;
   --cor-semantica2: #fefefe;
-  --titulo: 32px;
-  --subtitulo: 20px;
-  --corpo: 14px;
+  --cor-semantica3: #3d3d3d;
   --font-principal: "Nunito", sans-serif;
 }
 
@@ -80,8 +78,8 @@ body {
   align-items: center;
   width: 355px;
   height: 52px;
-  background: #fff;
-  border: 1px solid #e0e0e0;
+  background: var(--cor-semantica2);
+  border: 1px solid var(--cor-semantica1);
   border-radius: 7px;
   padding: 0 12px;
   box-sizing: border-box;
@@ -96,7 +94,7 @@ body {
     font-family: var(--cor-semantica2);
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: var(--cor-semantica1);
   }
 }
 
@@ -111,7 +109,7 @@ body {
 }
 
 .barra-busca input::placeholder {
-  color: #d6d6d6;
+  color: var(--cor-semantica2);
   opacity: 1;
 }
 
@@ -219,13 +217,13 @@ body {
   }
 
   h2 {
-    color: gray;
+    color: var(--cor-semantica3);
     margin-right: 90px;
     margin-bottom: 100px;
   }
 
   h3 {
-    color: gray;
+    color: var(--cor-semantica3);
     margin-bottom: 5px;
   }
   h1 {
@@ -260,7 +258,7 @@ body {
     }
 
     a:hover {
-      color: white;
+      color: var(--cor-semantica2);
     }
   }
 
@@ -278,7 +276,7 @@ body {
     }
 
     a:hover {
-      color: white;
+      color: var(--cor-semantica2);
     }
   }
 }
@@ -292,7 +290,7 @@ body {
 
   .rodape-marca {
     font-size: var(--subtitulo);
-    font-weight: 800;
+    font-weight: 800px;
     color: var(--cor-secundaria);
     margin: 0 0 15px;
 
@@ -303,10 +301,6 @@ body {
 
     a:hover {
       color: var(--cor-principal);
-    }
-
-    button:hover {
-      color: var(--cor-semantica2);
     }
   }
 
@@ -332,7 +326,7 @@ body {
 
   .rodape-copy {
     font-size: 12px;
-    color: gray;
+    color: var(--cor-semantica3);
     margin: 0;
   }
 }
@@ -365,7 +359,7 @@ body {
     padding: 20px;
     padding-left: 45px;
     padding-right: 60px;
-    border: 1px solid black;
+    border: 1px solid var(--cor-semantica1);
     border-radius: 10px;
     margin-left: 0px;
 
@@ -423,7 +417,7 @@ body {
       margin: 0 0 16px;
       font-size: 16px;
       font-weight: 500;
-      color: gray;
+      color: var(--cor-semantica3);
       max-width: 480px;
     }
 
@@ -462,7 +456,7 @@ body {
     .preco_cartao {
       font-size: 16px;
       font-weight: 500px;
-      color: gray;
+      color: var(--cor-semantica3);
     }
   }
 }
@@ -554,7 +548,7 @@ body {
       margin-top: 30px;
       font-size: 16px;
       font-weight: 500;
-      color: gray;
+      color: var(--cor-semantica3);
       width: 480px;
     }
 
@@ -584,7 +578,7 @@ body {
   .preco_cartao {
     font-size: 16px;
     font-weight: 500px;
-    color: gray;
+    color: var(--cor-semantica3);
   }
 }
 
@@ -599,7 +593,7 @@ body {
     margin-bottom: 8px;
     font-size: 16px;
     font-weight: 500;
-    color: gray;
+    color: var(--cor-semantica3);
 
     p {
       margin: 0px;
