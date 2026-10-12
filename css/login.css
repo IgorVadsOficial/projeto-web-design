@@ -14,9 +14,7 @@
 
 
 .pagina-login fieldset {
-    width: 100%;
-    max-width: 400px;
-    box-sizing: border-box;
+    width: 400px;
     margin: 0;
     padding: 35px 25px;
     background-color: white;
@@ -55,9 +53,7 @@
 }
 
 .pagina-login input {
-    width: 100%;
-    max-width: 300px;
-    box-sizing: border-box;
+    width: 300px;
     border: 1px solid #ccc;
     border-radius: 7px;
     padding: 10px;
