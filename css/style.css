@@ -705,3 +705,9 @@ body {
 .botao-comprar:hover {
   text-decoration: underline;
 }
+
+.cep label strong,
+.login a strong {
+  text-decoration: underline;
+  margin-left: 2px;
+}
