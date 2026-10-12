@@ -300,6 +300,8 @@ body {
     a:hover {
       color: var(--cor-principal);
     }
+
+    button:hover{color: var(--cor-semantica2);} 
   }
 
   .rodape-links {
