@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Finalize a compra de Apple iPhone 16 128 GB, escolhendo quantidade e forma de pagamento." />
+    <title>Comprar Apple iPhone 16 128 GB | ShopTech</title>
+    <link rel="shortcut icon" href="../medias/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/pagamento.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho (copiado do index.html) -->
+    <header class="cabecalho">
+      <section>
+        <ul class="navegacao">
+          <li class="home">
+            <a href="../index.html"
+              ><img src="../medias/programming.png" alt="logo do ShopTech"
+            /></a>
+          </li>
+          <li class="cep">
+            <form id="form-cep">
+              <label for="cep">
+                <img src="../medias/maps-and-flags.png" alt="" />
+                <strong style="text-decoration: underline"
+                  >Digite o CEP:</strong
+                ></label
+              >
+              <br />
+              <input
+                type="text"
+                id="cep"
+                name="cep"
+                placeholder="00000-000"
+                maxlength="8"
+                size="9"
+                inputmode="numeric"
+                pattern="[0-9]{5}-?[0-9]{3}"
+                required
+              />
+              <button type="submit">OK</button>
+            </form>
+          </li>
+          <li>
+            <form class="barra-busca" action="#" method="get">
+              <input
+                type="search"
+                name="busca"
+                placeholder="Procurar"
+                aria-label="Buscar produtos"
+              />
+              <button type="submit" aria-label="Buscar">🔍</button>
+            </form>
+          </li>
+          <li class="login">
+            <img src="../medias/login.png" alt="login" />
+            <a href="../login.html" class="linklogin"
+              ><strong style="text-decoration: underline">Entre</strong></a
+            >
+            ou
+            <br />
+            <a href="../register.html"
+              ><strong style="text-decoration: underline"
+                >Cadastre-se</strong
+              ></a
+            >
+          </li>
+          <li>
+            <button class="carrinho">
+              <a href="../carrinho.html"
+                >Carrinho <img src="../medias/cart.png" alt=""
+              /></a>
+            </button>
+          </li>
+        </ul>
+        <nav class="generos">
+          <ul>
+            <li><a href="../informatica.html">Informática</a></li>
+            <li><a href="../eletrodomesticos.html">Eletrodomésticos</a></li>
+            <li><a href="../smartphones.html">Smartphones</a></li>
+            <li><a href="../tv.html">TV e Video</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main class="pagamento">
+      <div class="conteudo">
+        <h1>Comprar Apple iPhone 16 128 GB</h1>
+
+        <section class="compra-layout">
+          <figure class="compra-capa">
+            <img
+              src="../medias/61ctYsUobKL-removebg-preview.png"
+              alt="Apple iPhone 16 128 GB"
+            />
+          </figure>
+          <div class="produto-info">
+            <h2>Resumo do pedido: </h2>
+            <dl>
+              <dt><strong>Produto</strong></dt>
+              <dd>Apple iPhone 16 128 GB</dd>
+              <dt><strong>Preço</strong></dt>
+              <dd>R$ 5.499,00</dd>
+            </dl>
+
+            <h2>Dados da compra</h2>
+            <form class="formulario" action="#" method="post">
+              <div class="campo">
+                <label for="quantidade">Quantidade *</label>
+                <input
+                  type="number"
+                  id="quantidade"
+                  name="quantidade"
+                  min="1"
+                  max="10"
+                  value="1"
+                  required
+                />
+                <p class="erro">Informe uma quantidade entre 1 e 10.</p>
+              </div>
+
+              <div class="campo">
+                <label for="cep-entrega">CEP de entrega *</label>
+                <input
+                  type="text"
+                  id="cep-entrega"
+                  name="cep"
+                  placeholder="59000-000"
+                  pattern="\d{5}-\d{3}"
+                  title="Use o formato 59000-000"
+                  inputmode="numeric"
+                  autocomplete="postal-code"
+                  required
+                />
+                <p class="erro">Informe o CEP no formato 59000-000.</p>
+                <p class="dica">Formato: 59000-000</p>
+              </div>
+
+              <fieldset>
+                <legend>Forma de pagamento *</legend>
+                <div class="campo campo-check">
+                  <input
+                    type="radio"
+                    id="pg-pix"
+                    name="pagamento"
+                    value="pix"
+                    required
+                  />
+                  <label for="pg-pix">Pix</label>
+                </div>
+                <div class="campo campo-check">
+                  <input
+                    type="radio"
+                    id="pg-cartao"
+                    name="pagamento"
+                    value="cartao"
+                  />
+                  <label for="pg-cartao">Cartão de crédito</label>
+                </div>
+                <div class="campo campo-check">
+                  <input
+                    type="radio"
+                    id="pg-boleto"
+                    name="pagamento"
+                    value="boleto"
+                  />
+                  <label for="pg-boleto">Boleto bancário</label>
+                </div>
+                <p class="erro">Escolha uma forma de pagamento.</p>
+                <p class="dica">
+                  <a href="#formas-de-pagamento"
+                    >Veja como funciona cada forma de pagamento</a
+                  >
+                </p>
+              </fieldset>
+
+              <button class="botao-confirmar" type="submit">
+                Confirmar compra de Apple iPhone 16 128 GB
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <section id="formas-de-pagamento" class="info-compra">
+          <h2>Formas de pagamento</h2>
+          <p>Condições fictícias, criadas para este projeto.</p>
+
+          <h3>Pix</h3>
+          <p>
+            Pagamento na hora, com 5% de desconto: <strong>R$ 5.224,05</strong> em
+            vez de R$ 5.499,00.
+          </p>
+          <ol>
+            <li>Escolha &ldquo;Pix&rdquo; ao confirmar a compra.</li>
+            <li>
+              Copie o código ou leia o QR Code no aplicativo do seu banco.
+            </li>
+            <li>Confirme o valor e finalize o pagamento.</li>
+          </ol>
+
+          <h3>Cartão de crédito</h3>
+          <p>Pagamento em 1x sem juros.</p>
+          <table>
+            <caption>
+              Parcelamento no cartão de crédito
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Parcelas</th>
+                <th scope="col">Juros</th>
+                <th scope="col">Valor de cada parcela</th>
+                <th scope="col">Total a pagar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1x</th>
+                <td>Sem juros</td>
+                <td>R$ 5.499,00</td>
+                <td>R$ 5.499,00</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Boleto bancário</h3>
+          <dl>
+            <dt>Valor</dt>
+            <dd>R$ 5.224,05, à vista.</dd>
+            <dt>Vencimento</dt>
+            <dd>3 dias após a compra.</dd>
+            <dt>Confirmação</dt>
+            <dd>Até 2 dias úteis depois do pagamento.</dd>
+            <dt>Observação</dt>
+            <dd>O pedido só é enviado depois da confirmação.</dd>
+          </dl>
+        </section>
+      </div>
+    </main>
+
+    <footer class="rodape">
+      <div class="rodape-conteudo">
+        <p class="rodape-marca"><a href="../index.html">ShopTech</a></p>
+
+        <ul class="rodape-links">
+          <li><a href="../informatica.html">Informática</a></li>
+          <li><a href="../eletrodomesticos.html">Eletrodomésticos</a></li>
+          <li><a href="../smartphones.html">Smartphones</a></li>
+          <li><a href="../tv.html">TV e Video</a></li>
+        </ul>
+
+        <p class="rodape-copy">
+          © 2026 ShopTech. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
