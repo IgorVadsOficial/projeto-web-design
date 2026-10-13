@@ -41,11 +41,17 @@ body {
 }
 
 .cep {
+  label {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+  }
+
   img {
     width: 13px;
     height: 13px;
     margin-right: 0px;
-    margin-top: 8px;
+    margin-top: 0px;
   }
 
   border: 1px solid var(--cor-semantica2);
