@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../medias/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Carrinho | Acer Aspire 5</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <section>
+        <ul class="navegacao">
+          <li class="home">
+            <a href="../index.html"
+              ><img src="../medias/programming.png" alt="logo do ShopTech"
+            /></a>
+          </li>
+          <li class="cep">
+            <form id="form-cep">
+              <label for="cep">
+                <img src="../medias/maps-and-flags.png" alt="#" />
+                <strong style="text-decoration: underline"
+                  >Digite o CEP:</strong
+                ></label
+              >
+              <br />
+              <input
+                type="text"
+                id="cep"
+                name="cep"
+                placeholder="00000-000"
+                maxlength="8"
+                size="9"
+                inputmode="numeric"
+                pattern="[0-9]{5}-?[0-9]{3}"
+                required
+              />
+              <button type="submit">OK</button>
+            </form>
+          </li>
+          <li>
+            <form class="barra-busca" action="#" method="get">
+              <input
+                type="search"
+                name="busca"
+                placeholder="Procurar"
+                aria-label="Buscar produtos"
+              />
+              <button type="submit" aria-label="Buscar">🔍</button>
+            </form>
+          </li>
+          <li class="login">
+            <img src="../medias/login.png" alt="login" />
+            <a href="../login.html" class="linklogin"
+              ><strong style="text-decoration: underline">Entre</strong></a
+            >
+            ou
+
+            <br />
+            <a href="../register.html"
+              ><strong style="text-decoration: underline"
+                >Cadastre-se</strong
+              ></a
+            >
+          </li>
+          <li>
+            <button class="carrinho">
+              <a href="../carrinho.html"
+                >Carrinho <img src="../medias/cart.png" alt="#"
+              /></a>
+            </button>
+          </li>
+        </ul>
+        <nav class="generos">
+          <ul>
+            <li><a href="../informatica.html">Informática</a></li>
+            <li><a href="../eletrodomesticos.html">Eletrodomésticos</a></li>
+            <li><a href="../smartphones.html">Smartphones</a></li>
+            <li><a href="../tv.html">TV e Video</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main class="carrinho_de_compra">
+      <ul>
+        <li>
+          <div class="cep_carrinho">
+            <img src="../medias/location.png" alt="#" />
+            Envie para o CEP:
+            <input
+              type="text"
+              id="cep"
+              name="cep"
+              placeholder="00000-000"
+              maxlength="8"
+              size="9"
+              inputmode="numeric"
+              pattern="[0-9]{5}-?[0-9]{3}"
+              required
+            />
+            <button type="submit">OK</button>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="produto_carrinho">
+        <li class="produto_item">
+          <div class="produto_no_carrinho">
+            <div class="produto_imagem">
+              <h1>Produto:</h1>
+              <img src="../medias/acer-aspire-5.png" alt="Acer Aspire 5" />
+            </div>
+
+            <div class="produto_info">
+              <h2 class="produto_nome">Acer Aspire 5</h2>
+              <br />
+              <p class="produto_descricao"> Notebook Acer Aspire 5 com processador Intel Core i5, 8 GB de RAM e SSD de 512 GB. </p>
+
+              <div class="produto_rodape">
+                <div class="produto_quantidade">
+                  <select
+                    name="quantidade"
+                    id="quantidade"
+                    aria-label="Quantidade"
+                  >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+
+                <div class="produto_precos">
+                  <p class="preco_pix">R$ 3.499,00 no PIX</p>
+                  <p class="preco_cartao">ou R$ 3.499,00 no cartão</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="resumo_pedido">
+          <div class="resumo_card">
+            <div class="resumo_linha">
+              <p style="color: black"><strong>Produto(s):</strong></p>
+              <p>R$ 3.499,00</p>
+            </div>
+            <div class="resumo_linha">
+              <p style="color: black"><strong>Frete:</strong></p>
+              <p>R$ 36,26</p>
+            </div>
+
+            <hr />
+
+            <div class="resumo_linha resumo_total">
+              <p><strong>Total:</strong></p>
+              <p><strong>R$ 3.535,26</strong></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <a href="../pagamento.html" class="btn-continuar">CONTINUAR</a>
+    </main>
+
+    <footer class="rodape">
+      <div class="rodape-conteudo">
+        <p class="rodape-marca"><a href="../index.html">ShopTech</a></p>
+
+        <ul class="rodape-links">
+          <li><a href="../informatica.html">Informática</a></li>
+          <li><a href="../eletrodomesticos.html">Eletrodomésticos</a></li>
+          <li><a href="../smartphones.html">Smartphones</a></li>
+          <li><a href="../tv.html">TV e Video</a></li>
+        </ul>
+        <p class="rodape-copy">
+          © 2026 ShopTech. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
