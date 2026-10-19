@@ -10,6 +10,7 @@
   --titulo: 32px;
   --subtitulo: 20px;
   --corpo: 14px;
+  --texto1: 18px
 }
 
 body {
@@ -100,7 +101,7 @@ body {
     outline: none;
     background: transparent;
     font-family: var(--font-principal);
-    font-size: 18px;
+    font-size: var(--texto1);
     font-weight: bold;
     color: var(--cor-semantica1);
   }
@@ -110,7 +111,7 @@ body {
   border: none;
   background: transparent;
   cursor: pointer;
-  font-size: 18px;
+  font-size: var(--texto1);
   padding: 5px;
   outline: none;
 }
@@ -152,7 +153,7 @@ body {
   font-family: var(--font-principal);
   background-color: var(--cor-secundaria);
   border-radius: 8px;
-  font-size: 18px;
+  font-size: var(--texto1);
 
   width: 130px;
   height: 50px;
@@ -196,7 +197,7 @@ body {
     border-radius: 10px;
     color: var(--cor-semantica2);
 
-    font-size: 15px;
+    font-size: var(--corpo);
 
     a:hover {
       color: var(--cor-semantica1);
@@ -255,7 +256,7 @@ body {
     color: var(--cor-semantica1);
     margin-left: 650px;
     border-radius: 10px;
-    font-size: 35px;
+    font-size: var(--titulo);
     a,
     a:visited {
       color: var(--cor-semantica1);
@@ -312,7 +313,7 @@ body {
   }
 
   .rodape-copy {
-    font-size: 12px;
+    font-size: var(--corpo);
     color: var(--cor-semantica3);
     margin: 0;
   }
@@ -395,13 +396,13 @@ body {
 
     .produto_nome {
       margin: 0px;
-      font-size: 18px;
+      font-size: var(--texto1);
       color: var(--cor-semantica1);
     }
 
     .produto_descricao {
       margin: 0 0 16px;
-      font-size: 16px;
+      font-size: var(--texto1);
       font-weight: 500;
       color: var(--cor-semantica3);
       max-width: 480px;
@@ -416,7 +417,7 @@ body {
     select {
       padding: 8px 10px;
       font-family: var(--font-principal);
-      font-size: 18px;
+      font-size: var(--texto1);
       font-weight: bold;
       color: var(--cor-semantica1);
       background: var(--cor-semantica2);
@@ -434,13 +435,13 @@ body {
     }
 
     .preco_pix {
-      font-size: 18px;
+      font-size: var(--texto1);
       font-weight: 800px;
       color: var(--cor-semantica1);
     }
 
     .preco_cartao {
-      font-size: 16px;
+      font-size: var(--corpo);
       font-weight: 500px;
       color: var(--cor-semantica3);
     }
@@ -502,7 +503,7 @@ body {
 
       h1 {
         margin: 0px;
-        font-size: 18px;
+        font-size: var(--texto1);
         color: var(--cor-principal);
       }
 
@@ -520,7 +521,7 @@ body {
 
     .produto_nome {
       margin: 0px;
-      font-size: 18px;
+      font-size: var(--texto1);
       color: var(--cor-semantica1);
     }
 
@@ -532,7 +533,7 @@ body {
     .produto_descricao {
       margin-left: -102px;
       margin-top: 30px;
-      font-size: 16px;
+      font-size: var(--corpo);
       font-weight: 500;
       color: var(--cor-semantica3);
       width: 480px;
@@ -546,7 +547,7 @@ body {
   select {
     padding: 10px;
     font-family: var(--font-principal);
-    font-size: 18px;
+    font-size: var(--texto1);
     font-weight: bold;
     color: var(--cor-semantica1);
     background: var(--cor-semantica2);
@@ -556,13 +557,13 @@ body {
   }
 
   .preco_pix {
-    font-size: 18px;
+    font-size: var(--texto1);
     font-weight: 800px;
     color: var(--cor-semantica1);
   }
 
   .preco_cartao {
-    font-size: 16px;
+    font-size: var(--texto1);
     font-weight: 500px;
     color: var(--cor-semantica3);
   }
@@ -577,7 +578,7 @@ body {
 
   .resumo_linha {
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: var(--texto1);
     font-weight: 500;
     color: var(--cor-semantica3);
 
@@ -707,7 +708,7 @@ body {
 
 .tabela-especificacoes caption {
   font-weight: bold;
-  font-size: 20px;
+  font-size: var(--texto1);
   margin-bottom: 10px;
 }
 
