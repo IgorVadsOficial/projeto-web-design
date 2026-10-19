@@ -28,11 +28,13 @@
                 type="text"
                 id="cep"
                 name="cep"
-                placeholder="00000-000"
-                maxlength="8"
+                placeholder="59000-000"
+                maxlength="9"
                 size="9"
                 inputmode="numeric"
-                pattern="[0-9]{5}-?[0-9]{3}"
+                pattern="\d{5}-\d{3}"
+                title="Use o formato 59000-000"
+                autocomplete="postal-code"
                 required
               />
               <button type="submit">OK</button>
