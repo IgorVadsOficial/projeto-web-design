@@ -10,7 +10,7 @@
   --titulo: 32px;
   --subtitulo: 20px;
   --corpo: 14px;
-  --texto1: 18px
+  --texto1: 18px;
 }
 
 body {
@@ -386,7 +386,7 @@ body {
       }
 
       img {
-        width:auto;
+        width: auto;
       }
     }
 
