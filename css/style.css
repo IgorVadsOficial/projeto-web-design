@@ -100,7 +100,7 @@ body {
     border: none;
     outline: none;
     background: transparent;
-    font-family: var(--cor-semantica2);
+    font-family: var(--font-principal);
     font-size: 18px;
     font-weight: bold;
     color: var(--cor-semantica1);
