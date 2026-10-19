@@ -7,13 +7,17 @@
   --cor-semantica2: #fefefe;
   --cor-semantica3: #3d3d3d;
   --font-principal: "Nunito", sans-serif;
+  --titulo: 32px;
+  --subtitulo: 20px;
+  --corpo: 14px;
+  --texto1: 18px
 }
 
 .pagamento {
   padding: 32px 24px 48px;
   background-color: var(--cor-semantica2);
   color: var(--cor-semantica1);
-  font-size: 17px;
+  font-size: var(--texto1);
 }
 
 .pagamento .conteudo {
@@ -28,14 +32,14 @@
 }
 
 .pagamento h1 {
-  font-size: 36px;
+  font-size: var(--titulo);
   line-height: 1.15;
 }
 .pagamento h2 {
-  font-size: 24px;
+  font-size: var(--subtitulo);
 }
 .pagamento h3 {
-  font-size: 20px;
+  font-size: var(--subtitulo);
   margin: 20px 0 4px;
 }
 
@@ -101,7 +105,7 @@ dd {
   background-color: var(--cor-semantica2);
   color: var(--cor-semantica1);
   font-family: var(--font-principal);
-  font-size: 17px;
+  font-size: var(--texto1);
 }
 
 .formulario ::placeholder {
@@ -119,7 +123,7 @@ fieldset {
 legend {
   padding: 0;
   margin-bottom: 8px;
-  font-size: 20px;
+  font-size: var(--subtitulo);
   font-weight: 700;
 }
 
@@ -133,13 +137,13 @@ legend {
 
 .dica {
   margin: 4px 0 0;
-  font-size: 15px;
+  font-size: var(--corpo);
 }
 
 .erro {
   display: none;
   margin: 4px 0 0;
-  font-size: 15px;
+  font-size: var(--corpo);
   font-weight: 700;
 }
 
@@ -160,7 +164,7 @@ fieldset:has(input:user-invalid) .erro {
   background-color: var(--cor-secundaria);
   color: var(--cor-semantica1);
   font-family: var(--font-principal);
-  font-size: 18px;
+  font-size: var(--texto1);
   font-weight: 700px;
   cursor: pointer;
 }
