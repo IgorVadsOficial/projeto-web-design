@@ -386,7 +386,7 @@ body {
       }
 
       img {
-        width: 120px;
+        width:auto;
       }
     }
 
@@ -509,7 +509,7 @@ body {
 
       img {
         display: block;
-        width: 120px;
+        width: auto;
         height: 80px;
         margin: 0px;
       }
