@@ -632,6 +632,7 @@ body {
 
 .btn-continuar-vazio {
   background-color: var(--cor-semantica3);
+  color: var(--cor-semantica2);
 }
 
 .catalogo {
