@@ -91,7 +91,6 @@ body {
   border: 1px solid var(--cor-semantica1);
   border-radius: 7px;
   padding: 0 12px;
-  box-sizing: border-box;
 
   input {
     flex: 1;
@@ -114,7 +113,6 @@ body {
   font-size: 18px;
   padding: 5px;
   outline: none;
-  box-shadow: none;
 }
 
 .barra-busca input::placeholder {
@@ -372,7 +370,6 @@ body {
     margin-right: 500px;
     border: 1px solid var(--cor-semantica1);
     border-radius: 10px;
-    box-sizing: border-box;
 
     .produto_imagem {
       display: flex;
@@ -412,7 +409,7 @@ body {
 
     .produto_rodape {
       display: flex;
-      align-items: flex-end;
+      align-items: flex;
       margin-top: auto;
     }
 
